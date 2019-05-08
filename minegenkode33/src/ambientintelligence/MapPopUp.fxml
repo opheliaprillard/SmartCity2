@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="828.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ambientintelligence.MapPopUpController">
+	<children>
+		<ImageView fitHeight="844.0" fitWidth="1500.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@mappic.png" />
+			</image>
+		</ImageView>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0">
+			<children>
+			<Button fx:id="button2" layoutX="357.0" layoutY="244.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#getBackMobile" prefHeight="18.0" prefWidth="19.0" style="-fx-background-color: #FF0000; -fx-background-radius: 5000;" />
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="93.0" layoutY="304.0" onMouseDragOver="#getMexicanDiscount" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="322.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="265.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="371.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mexican" fitHeight="57.0" fitWidth="41.0" layoutX="427.0" layoutY="182.0" onMouseEntered="#getMexicanDiscount" onMouseExited="#removeMexicanDiscount" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="294.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="414.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="282.0" layoutY="391.0" onMouseEntered="#getGelatoEvent" onMouseExited="#removeGelatoEvent" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="527.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="495.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discountpoint.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelmex" layoutX="451.0" layoutY="143.0" />
+            <ImageView fx:id="mexicanPic" fitHeight="150.0" fitWidth="200.0" layoutX="447.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@discountMexican.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="gelatoPic" fitHeight="141.0" fitWidth="214.0" layoutX="303.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@gelato.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="E_RESIZE" />
+               </cursor>
+            </ImageView>
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>
